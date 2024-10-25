@@ -1,0 +1,660 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+}
+header {
+  z-index: 3;
+  position: sticky; 
+  top: 0px; 
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-bottom: #726969 solid 1px;
+  
+}
+
+.icons {
+  display: flex;
+  gap: 30px; /* Add space between icons */
+}
+
+.icons i {
+  font-size: 1.5em; /* Increase icon size (adjust as needed) */
+}
+
+.pic {
+  position: absolute;
+  left: 45%;
+}
+
+.pic img {
+  width: 100px;
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-right: 40px;
+}
+
+.buttons button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  gap: 15px;
+  transition: background-color 0.2s ease-in-out
+}
+
+.buttons button:hover {
+  background-color: #333; /* Change to a slightly brighter shade of black */
+}
+#signin{
+  background-color: white;
+  color: black;
+}
+#signin:hover{
+  background-color: black;
+  color: white;
+}
+.buttons a {
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+#navigation {
+  background-color: #E5E5E5;  /* Darker gray background */
+  z-index: 2;
+  position: sticky;          /* Fix the navigation bar to the top */
+  top: 68px;  
+  left: 0px;
+  right: 0px;                 /*  Position it at the top of the viewport */
+  width: 100%;                /* Make it span the full width */
+  border-top: #726969 solid 1px;
+}
+
+nav ul {
+  display: flex;             /* Arrange links horizontally */
+  justify-content: center;
+  list-style-type: none;          /* Remove default bullet points */
+  margin: 0;                 /* Remove default margin */
+  padding: 0;   
+  background-color:white;
+  position: fixed;
+  z-index: 3;
+  top: 50px; 
+  width: 100%;
+
+}
+
+nav li {
+  margin-top: 10px;
+  margin-right: 20px;         /* Add spacing between links */
+  margin-bottom: 10px;
+}
+
+nav li a {
+  font-weight: bold;     /* Make the text bold */
+  font-size: 0.9em;      /* Make the text slightly smaller */
+  text-decoration: none;   
+  color: black;              
+}
+
+/* Style the links on hover (maintain boldness) */
+nav li:hover a {
+  background-color: #CCC; /* Change link background color on hover */
+  color: black;           /* Ensure text color stays black for better contrast */
+}
+
+.grid-container{
+  display: grid;
+  margin-left: 10px;
+  margin-right: 10px;
+  column-gap: 1rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  font-family: BBC Reith Serif, Helvetica, Arial, sans-serif;
+
+}
+.grid-container h2 {
+  text-decoration: none; /* Remove default browser underline */
+  cursor: pointer; /* Set cursor to pointer on hover */
+}
+.grid-container h2:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+.item1, .item2 img{
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.item1 h2,p{
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
+}
+.item1 p{
+  color: #3e3a3a;
+}
+.item2 p{
+  color: #3e3a3a;
+}
+.item3 p{
+  color: #3e3a3a;
+}
+.item2 ul #list{
+margin-right: -15px;
+padding-top: 80px;
+font-weight: 650;
+}
+
+h2{
+  font-size: 17px;
+}
+h1{
+font-size: 30px;
+}
+.grid-container img {
+opacity: 1;  /* Set initial opacity to full */
+transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+}
+
+.grid-container img:hover {
+opacity: 0.8; /* Slightly reduce opacity on hover (adjust for desired effect) */
+}
+
+.grid-container h1:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+.item3 h2{
+margin-top: 10px;
+}
+
+
+#item1A{
+color: #a19797;
+font-size: smaller;
+padding-bottom: 10px;
+}
+
+#item3A, #item3B, #item3C, #item3D{
+color: #a19797;
+font-size: smaller;
+padding-bottom: 10px;
+}
+#afterFirst{
+  height: 2px; /* Increase the height of the line */
+  background-color: #333; /* Use a darker color */
+
+}
+
+.grid-container2 {
+  display: grid;
+  margin-left: 10px;
+  margin-right: 10px;
+  grid-template-columns: repeat(2, 1fr); /* Two columns, each taking up 1 fraction of space */
+  grid-gap: 10px; /* Optional spacing between items */
+  font-family: BBC Reith Serif, Helvetica, Arial, sans-serif;
+  /* Added property: */
+  grid-auto-rows: minmax(auto, 1fr);
+  margin-bottom: 30px;
+}
+.grid-container2 img {
+  opacity: 1;  /* Set initial opacity to full */
+  transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+  }
+  
+  .grid-container2 img:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover (adjust for desired effect) */
+  }
+  .grid-container2 h2 {
+    text-decoration: none; /* Remove default browser underline */
+    cursor: pointer; /* Set cursor to pointer on hover */
+  }
+  .grid-container2 h2:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  .grid-container2 p{
+    font-size: 15px;
+  }
+  #s2A, #s2B{
+    color: #a19797;
+  font-size: smaller;
+  padding-bottom: 10px;
+  }
+  #afterSecond{
+    height: 0.5px; /* Increase the height of the line */
+    background-color: #333; /* Use a darker color */
+  }
+  .grid-container3{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(248, 248, 248);
+  }
+  #old{
+    padding: 20px;
+  }
+  #New{
+    width: 80%;
+    margin: auto;
+    height: 2px;
+    background-color: #333;
+  }
+  #Heading{
+    font-weight: 600;
+    margin-left: 10%;
+    font-size: medium;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .grid-container4{
+    gap: 1rem;
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-columns: 3fr 1fr;
+  }
+  .grid-container4 .sub-grid-container1{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sub-grid-container1{
+    width: 850px;
+  }
+
+  .sub-grid-container1 h2{
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .sub-grid-container1 p{
+    font-size: medium;
+    color: black;
+  }
+  .sub-grid-container2{
+    display: flex;
+    gap: 1rem;
+    color: black;
+    
+  }
+  #s4A, #s4B, #s4C, #s4D, #s4E, #s4F, #s4G, #s4H{
+    color: #a19797;
+  font-size: smaller;
+  padding-bottom: 10px;
+  }
+
+  .grid-container4 img {
+    opacity: 1;  /* Set initial opacity to full */
+    transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+    }
+    
+    .grid-container4 img:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover (adjust for desired effect) */
+    }
+    .grid-container4 h2 {
+      text-decoration: none; /* Remove default browser underline */
+      cursor: pointer; /* Set cursor to pointer on hover */
+    }
+    .grid-container4 h2:hover {
+      text-decoration: underline; /* Add underline on hover */
+    }
+    .grid-container5{
+      height: 400px;
+      display: grid;
+      background-color: black;
+      color: white;
+      grid-template-columns: repeat(8, 1fr);
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 7%;
+      gap: 1rem;
+      overflow-x: auto;
+      padding-top: 5%;
+    }
+    
+    .grid-container5 p{
+      font-size: medium;
+    }
+    .grid-container5 img {
+      opacity: 1;  /* Set initial opacity to full */
+      transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+      }
+      
+      .grid-container5 img:hover {
+      opacity: 0.8; /* Slightly reduce opacity on hover (adjust for desired effect) */
+      }
+      .grid-container5 h2 {
+        text-decoration: none; /* Remove default browser underline */
+        cursor: pointer; /* Set cursor to pointer on hover */
+      }
+      .grid-container5 h2:hover {
+        text-decoration: underline; /* Add underline on hover */
+      }
+   .grid-container6{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(248, 248, 248);
+   }
+.Afters6{
+  margin-top: 3%;
+  height: 2px;
+  background-color: black;
+}
+.grid-container7{
+  /* height: 500px; */
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.subgrid{
+  padding-top: 25%;
+  padding-bottom: 25%;
+}
+.subgrid h2{
+  font-size: x-large;
+}
+.subgrid p{
+  color: #726969;
+}
+.subgrid button{
+  margin-top: 15%;
+  height: 30px;
+  width: 100px;
+  font-weight: 10px;
+  font-size: medium;
+  text-decoration: none;
+  border: 2px solid black;
+  background-color: white;
+}
+.grid-container7 img {
+  opacity: 1;  /* Set initial opacity to full */
+  transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+  }
+  
+  .grid-container7 img:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover (adjust for desired effect) */
+  }
+  .grid-container7 h2 {
+    text-decoration: none; /* Remove default browser underline */
+    cursor: pointer; /* Set cursor to pointer on hover */
+  }
+  .grid-container7 h2:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+  .grid-container8{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .grid-container8 img {
+    opacity: 1;  /* Set initial opacity to full */
+    transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+    }
+    
+    .grid-container8 img:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover (adjust for desired effect) */
+    }
+    .grid-container8 h2 {
+      text-decoration: none; /* Remove default browser underline */
+      cursor: pointer; /* Set cursor to pointer on hover */
+    }
+    .grid-container8 h2:hover {
+      text-decoration: underline; /* Add underline on hover */
+    }
+
+    #s8A, #s8B, #s8C, #s8D{
+      color: #a19797;
+      font-size: smaller;
+      padding-bottom: 20px;
+    }
+    #BLackgrid{
+      color: #a19797;
+      font-size: smaller;
+      padding-bottom: 20px;
+    }
+    .grid-container9{
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr 2fr;
+      padding-top: 3%;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-bottom: 3%;
+    }
+    .sub-grid-container9{
+      /* align-items: center; */
+    padding-top: 25%;
+  padding-bottom: 25%;
+    }
+    .sub-grid-container9 h2{
+      font-size: x-large;
+    }
+    .sub-grid-container9 p{
+      color: #726969;
+    }
+    .sub-grid-container9 button{
+      margin-top: 15%;
+      height: 30px;
+      width: 100px;
+      font-weight: 10px;
+      font-size: medium;
+      text-decoration: none;
+      border: 2px solid black;
+      background-color: white;
+    }
+    .grid-container9 img {
+      opacity: 1;  /* Set initial opacity to full */
+      transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+      }
+      
+      .grid-container9 img:hover {
+      opacity: 0.8; /* Slightly reduce opacity on hover (adjust for desired effect) */
+      }
+      .grid-container9 h2 {
+        text-decoration: none; /* Remove default browser underline */
+        cursor: pointer; /* Set cursor to pointer on hover */
+      }
+      .grid-container9 h2:hover {
+        text-decoration: underline; /* Add underline on hover */
+      }
+      .grid-container10{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(248, 248, 248);
+        padding-bottom: 2%;
+      }
+
+      .grid-container11{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10%;
+      }
+      /* .grid-container11 p{
+        color: black;
+      } */
+      .s8bottom{
+        color: #a19797;
+        font-size: smaller;
+        padding: 20px;
+      }
+      .grid-container11 img {
+        opacity: 1;  /* Set initial opacity to full */
+        transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+        }
+        
+        .grid-container11 img:hover {
+        opacity: 0.8; /* Slightly reduce opacity on hover (adjust for desired effect) */
+        }
+        .grid-container11 h2 {
+          text-decoration: none; /* Remove default browser underline */
+          cursor: pointer; /* Set cursor to pointer on hover */
+        }
+        .grid-container11 h2:hover {
+          text-decoration: underline; /* Add underline on hover */
+        }
+        .grid-container12{
+          height: 500px;
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          gap: 1rem;
+          background-color: black;
+          padding-top: 2%;
+        }
+        .grid-container12 h2{
+          color: white;
+        }
+        #s10{
+          color: white;
+        }
+        
+         .ABC{
+          background-color: black;
+          padding: 0;
+          height: 30px;
+         }
+         .InGridForm1{
+         height: 5px;
+         color: white;
+
+         }
+         .InGridForm2{
+          color: white;
+         }
+         .grid-container12 h2{
+          font-size: x-large;
+        }
+        .grid-container12 p{
+          color: #726969;
+        }
+        .grid-container12 button{
+          margin-top: 15%;
+          height: 30px;
+          width: 100px;
+          font-weight: 10px;
+          font-size: medium;
+          text-decoration: none;
+          border: 2px solid black;
+          background-color: white;
+        }
+        .grid-container12 img {
+          opacity: 1;  /* Set initial opacity to full */
+          transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+          }
+          
+          .grid-container12 img:hover {
+          opacity: 0.8; /* Slightly reduce opacity on hover (adjust for desired effect) */
+          }
+          .grid-container12 h2 {
+            text-decoration: none; /* Remove default browser underline */
+            cursor: pointer; /* Set cursor to pointer on hover */
+          }
+          .grid-container12 h2:hover {
+            text-decoration: underline; /* Add underline on hover */
+          }
+          .grid-container13{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-left: 10px;
+            margin-right: 10px;
+            gap: 1rem;
+            padding-bottom: 10%;
+          }
+          .grid-container13 p{
+            font-size: medium;
+          }
+          .grid-container13 img {
+            opacity: 1;  /* Set initial opacity to full */
+            transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+            }
+            
+            .grid-container13 img:hover {
+            opacity: 0.8; /* Slightly reduce opacity on hover (adjust for desired effect) */
+            }
+            .grid-container13 h2 {
+              text-decoration: none; /* Remove default browser underline */
+              cursor: pointer; /* Set cursor to pointer on hover */
+            }
+            .grid-container13 h2:hover {
+              text-decoration: underline; /* Add underline on hover */
+            }
+      .grid-container14{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(248, 248, 248);
+      }
+      #last{
+        margin-bottom: 2%;
+      }
+.footer{
+height: 400px;
+margin-left: 10px;
+}
+      #Image{
+        margin-bottom: 2%;
+      }
+      .InFooter{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-between;
+      }
+      .AB{
+        padding-left: 10px;
+        font-weight: 550;
+      }
+      #Hello{
+        margin-top: 2%;
+        padding: 10px 30px 10px 10px;
+        margin-bottom: 2%;
+      }
+      #Icons{
+        padding-left: 10px;
+      }
+      .End{
+        font-size: 13px;
+        padding-left: 10px;
+      }
+     
+      .End:hover {
+        text-decoration: underline; /* Add underline on hover */
+      }
+      #lastpara{
+       font-size: 13px;
+      }
+#blackbutton:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+#buttons7:hover{
+  background-color: black;
+  color:wheat;
+  border: 2px solid black;
+}
